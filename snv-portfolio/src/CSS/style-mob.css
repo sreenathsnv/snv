@@ -1,0 +1,177 @@
+*{
+
+    /* background: #eceaea; */
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.navbar{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    min-height: 10vh;
+    background:rgb(80, 4, 151);
+    width: 100vw;
+}
+.header-container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height:50vh;
+    width: 100vw;
+    margin-top: -1vh;
+    padding-bottom: 4vh;
+    
+}
+.profile-photo img{
+    width:40vw;
+    margin-bottom: 4vh;
+}
+.social-links{
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vh;
+    width:100%;
+}
+
+.text-heading{
+
+    font-size: 4vh;
+}
+.main-heading{
+    margin-left: 4vh;
+}
+.about{
+
+    display: flex;
+    flex-direction: column;
+    padding:1vh;
+    font-size: 2vh;
+    margin-top: 10vh;
+}
+.about-head{
+
+    margin-left: 10vw;
+    font-size: 5vh;
+    text-align: justify;
+    color: rgb(56, 190, 2);
+    margin-bottom: 4vh;
+}
+.skills{
+
+    height: 20vh;
+}
+.skills-heading{
+    
+    font-size: 10vw;
+    margin-left:5vw;
+    
+}
+
+.skills-img{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:100vw;
+    margin-top: 5vh;
+}
+.cards
+{
+
+    margin:4vw;
+}
+.cards img{
+
+    width:8vh;
+}
+.project-conatiner{
+
+    min-height: 30vh;
+    width: 100vw;
+    padding-top: 5vh;
+}
+.proj-head{
+
+    font-size: 5vh;
+}
+.project-card-container{
+
+    display:flex;
+    flex-direction: column;
+}
+.project-card{
+
+    display: flex;
+    flex-direction:column;
+    background: #ffffff;
+
+    align-items: center;
+    margin: 1vh;
+    border-radius: 1vh;
+    padding:5vw;
+}
+.snapshots{
+
+    visibility: hidden;
+}
+.snapshots img{
+
+    width:0;
+    height:0vh;
+}
+
+.project-name{
+
+    font-size: 5vh;
+}
+.desc-project{
+
+    font-size: 2vh;
+}
+.project-card button{
+
+    align-self: self-end;
+    margin-right: 3vw;
+}
+.education{
+
+    display: flex;
+    flex-direction: column;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+.contact-header{
+
+    font-size: 3vh;
+}
+
+.form-header{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+/* ============================= Projects ========
+*/
+
