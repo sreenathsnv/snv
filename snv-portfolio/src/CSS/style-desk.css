@@ -30,7 +30,7 @@ body{
     width: 80vw;
     border-radius: 1vh;
     margin-top: 4vh;
-    margin-left: 10vw;
+    margin-left: 12vw;
     box-shadow: 2vh 2vh 1em 1em rgb(173, 173, 173);
 }
 
@@ -54,6 +54,7 @@ body{
     min-height:30vh;
     margin-top: 20vh;
     width: 100%;
+  
 }
 .skills{
 
@@ -69,6 +70,7 @@ body{
 .cards{
 
     filter: drop-shadow(1vh 1vh 1em #8b8b8b);
+    transition: 1s;
 }
 .skills-img:hover .cards:not(:hover)
 {

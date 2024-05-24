@@ -126,7 +126,8 @@ body{
 }
 .content-about{
 
-    margin-left: 2vw;
+    margin-left: 6vw;
+    margin-right: 6vw;
     color: rgb(29, 30, 29);
 }
 
@@ -163,6 +164,8 @@ body{
     display: flex;
     flex-wrap: wrap;
     width:35vw;
+    min-height: 20vh;
+    
 }
 
 .cards
@@ -170,12 +173,13 @@ body{
     width:5vh;
     height:5vh;
     margin: 4vw;
-    margin-bottom: 7vh;
+    
 
 }
 .cards img{
 
     width:12vh;
+    
 }
 
 

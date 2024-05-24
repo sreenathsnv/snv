@@ -14,12 +14,12 @@ const SkillsImages = () => {
 
     return(
 
-        <div className="skills">
+        <div className="skills-img">
             {
                 
-                images.forEach((ele,index)=>(
+                images.map((ele,index)=>(
 
-                    <SkillImageComponent key={index} image={Python}/>
+                    <SkillImageComponent key={index} image={ele}/>
                 ))
             }
             

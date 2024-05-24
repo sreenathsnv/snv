@@ -28,9 +28,9 @@ a:hover{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1vh 5vw 1vh 5vw;
+  padding: 1vh 3vw 1vh 8vw;
   height: 10vh;
-  background: rgb(255, 255, 255);
+  background: #f2f1f3;
   margin-top: 4vh;
 }
 .nav__brand {
@@ -41,6 +41,7 @@ a:hover{
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-right: 5vw;
   gap: 3rem;
 }
 .nav__toggler {
@@ -54,7 +55,7 @@ a:hover{
   transition: 0.3s ease-in;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1013px) {
   .nav__toggler {
     display: block;
     cursor: pointer;
@@ -73,6 +74,7 @@ a:hover{
     transform: translateX(100%);
     transition: 0.5s ease-in;
     z-index: 7;
+    margin-right: 0vw;
   }
 }
 /* Active Class */

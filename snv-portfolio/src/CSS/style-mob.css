@@ -93,7 +93,8 @@ body{
 .cards
 {
 
-    margin:4vw;
+    margin:6vw;
+    margin-bottom: 5vh;
 }
 .cards img{
 

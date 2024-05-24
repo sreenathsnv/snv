@@ -3,7 +3,7 @@ import React from 'react'
 const SkillImageComponent = ({image}) => {
   return (
     <div class = "cards">
-        <img src={image} alt class="card-img-top" />
+        <img src={image}  class="card-img-top" />
     </div>
   )
 }
