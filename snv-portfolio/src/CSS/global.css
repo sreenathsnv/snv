@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background:rgb(253, 253, 253);
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.header-container{
+
+    background:rgb(80, 4, 151);
+    
+}
+
+.profile-photo img{
+    width: 30vw;
+}
+.main-heading{
+    color: #f9fcfb;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    
+}
+.icon
+{
+    position: relative;
+    margin:auto;
+    margin-right: 3vh;
+    width:5vh;
+    height:5vh;
+    border-radius: 50%;
+    background: #f9fafa;
+    border: 2px solid #7e7b7b;
+    
+    overflow: hidden;
+}
+
+.icon::after
+{
+    content: "";
+    position: absolute;
+    background: #616161;
+    width: 7vh;
+    height:7vh;
+    top:-7vh;
+    transition: transform 1s;
+}
+.icon:nth-child(1)::after
+{
+
+    background: #f41c8f;  
+}
+.icon:nth-child(2)::after
+{
+
+    background: #151515;  
+}
+.icon:nth-child(3)::after
+{
+
+    background: #11117e;  
+}
+.icon:nth-child(4)::after
+{
+
+    background: #1c96f4;  
+}
+.icon:nth-child(5)::after
+{
+
+    background: #f31313;  
+}
+.icon i{
+    position: absolute;
+    font-size:3vh;
+    margin:auto;
+    top:.8vh;
+    left:.8vh;
+    color:#0f0f0f;
+    z-index: 2;
+
+}
+.icon:hover  i:hover
+{
+    color:#ffffff;
+    transform: rotateZ(360deg);
+    transition: 2s;
+}
+ .icon:hover::after 
+{
+
+   transform: translateY(7vh);
+}
+
+.social-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height:5vh;
+    width:30vw;
+    margin-bottom: 0;
+    z-index: 2;
+}
+.about{
+
+    display: flex;
+    flex-direction: column;
+    padding:1vh;
+    font-size: 2vh;
+    background: transparent;
+    
+}
+
+.about-head{
+
+    margin-left: 6vw;
+    margin-bottom: 10vh;
+    font-size: 9vh;
+    color: rgb(56, 190, 2);
+}
+.content-about{
+
+    margin-left: 2vw;
+    color: rgb(29, 30, 29);
+}
+
+/* ============================Skills=============== */
+
+.skills{
+
+    display: flex;
+    flex-direction:column;
+    width: 100vw;
+    min-height:50vh;
+    margin-top:10vh;
+
+}
+.skills .skills-head{
+
+    display: flex;
+    flex-direction: column;
+}
+.skills-heading{
+
+    color:#262626;
+    margin-bottom: 2vh;
+}
+.skills-quote{
+    text-align: center;
+    font-style: italic;
+    color: #0392ff;
+    font-weight: 400;
+    font-size: 2.5vh;
+}
+.skills-img{
+
+    display: flex;
+    flex-wrap: wrap;
+    width:35vw;
+}
+
+.cards
+{
+    width:5vh;
+    height:5vh;
+    margin: 4vw;
+    margin-bottom: 7vh;
+
+}
+.cards img{
+
+    width:12vh;
+}
+
+
+/* ========================= Project ========================== */
+
+.project-conatiner{
+
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height:auto;
+    padding-bottom: 4vh;
+    background:rgb(247, 245, 245);
+}
+
+.proj-head{
+
+    color:rgb(20, 132, 91);
+}
+.card-contents{
+
+    display: flex;
+    flex-direction: column;
+}
+.project-name{
+
+    color: #252424;
+} 
+.desc-project{
+    color: #555555;
+    font-style: oblique;
+    margin-top:3vh;
+}
