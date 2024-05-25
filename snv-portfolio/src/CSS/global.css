@@ -4,6 +4,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+html{
+
+    scroll-behavior: smooth;
+}
 body{
     background:rgb(253, 253, 253);
     display: flex;

@@ -1,4 +1,4 @@
-button {
+.github-btn {
     padding: 0;
     margin: 0;
     border: none;
@@ -6,7 +6,7 @@ button {
     cursor: pointer;
   }
   
-  button {
+  .github-btn {
     --primary-color: #111;
     --hovered-color: #c84747;
     position: relative;
@@ -17,14 +17,14 @@ button {
     align-items: center;
   }
   
-  button p {
+  .github-btn p {
     margin: 0;
     position: relative;
     font-size: 20px;
     color: var(--primary-color);
   }
   
-  button::after {
+  .github-btn::after {
     position: absolute;
     content: "";
     width: 0;
@@ -35,7 +35,7 @@ button {
     transition: 0.3s ease-out;
   }
   
-  button p::before {
+  .github-btn p::before {
     position: absolute;
     /*   box-sizing: border-box; */
     content: "github";
@@ -46,20 +46,20 @@ button {
     transition: 0.3s ease-out;
   }
   
-  button:hover::after {
+  .github-btn:hover::after {
     width: 100%;
   }
   
-  button:hover p::before {
+  .github-btn:hover p::before {
     width: 100%;
   }
   
-  button:hover svg {
+  .github-btn:hover svg {
     transform: translateX(4px);
     color: var(--hovered-color);
   }
   
-  button svg {
+  .github-btn svg {
     color: var(--primary-color);
     transition: 0.2s;
     position: relative;

@@ -98,6 +98,10 @@ body{
     min-height: 30vh;
     width: 100vw;
     padding-top: 10vh;
+    margin-top: 10vh;
+    margin-left: 3vw;
+    width: 100vw;
+   
 }
 .proj-head{
 
@@ -117,6 +121,7 @@ body{
     background: #ffffff;
     align-items: center;
     margin: 2vw;
+    margin-left: 10vw;
     border-radius: 2vh;
     padding:1vh;
 
@@ -133,17 +138,22 @@ body{
 .snapshots{
 
     width: 60vw;
+    margin-right: 7vw;
 }
 .snapshots img{
 
-    width:40vh;
+    width:40vw;
     height:50vh;
 }
-.project-card button{
+.project-card  a{
+
+    align-self: flex-end;
+}
+.project-card  a button{
 
     margin-top: 4vh;
     margin-right: 10vw;
-    align-self: flex-end;
+    
 }
 .education{
 

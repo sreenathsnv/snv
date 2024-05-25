@@ -1,80 +1,75 @@
-.botao {
-    width: 125px;
-    height: 45px;
-    border-radius: 20px;
-    border: none;
-    box-shadow: 1px 1px rgba(119, 119, 119, 0.37);
-    padding: 5px 10px;
-    background-color: rgb(2, 127, 98);
-    color: #fff;
-    font-family: Roboto, sans-serif;
-    font-weight: 505;
-    font-size: 16px;
-    line-height: 1;
-    cursor: pointer;
-    transition: 0.5s linear;
+.button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #ffd401;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(205, 205, 205, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  width:8vw;
+  height:5vh;
+}
+
+.button:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #183153;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+.button:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.button span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #c40132;
+  font-size: 1vw;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 1013px) {
+  .button{
+
+    width:30vw;
+    height:5vh;
   }
-  
-  .botao .mysvg {
-    display: none;
+  .button span {
+    font-size: 2.5vw;
+    font-weight: 700;
   }
-  
-  .botao:hover {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    transition: 0.5s linear;
+}
+.button:hover span {
+  color: #ffffff;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
   }
-  
-  .botao:hover .texto {
-    display: none;
+
+  50% {
+    transform: scale(0.95);
   }
-  
-  .botao:hover .mysvg {
-    display: inline;
+
+  100% {
+    transform: scale(1);
   }
-  
-  .botao:hover::after {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 3px;
-    background-color: rgb(59, 190, 230);
-    margin-left: -20px;
-    animation: animate 0.9s linear infinite;
-  }
-  
-  .botao:hover::before {
-    content: "";
-    position: absolute;
-    top: -3px;
-    left: -3px;
-    width: 100%;
-    height: 100%;
-    border: 3.5px solid transparent;
-    border-top: 3.5px solid #fff;
-    border-right: 3.5px solid #fff;
-    border-radius: 50%;
-    animation: animateC 2s linear infinite;
-  }
-  
-  @keyframes animateC {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  @keyframes animate {
-    0% {
-      transform: translateY(0);
-    }
-  
-    100% {
-      transform: translateY(20px);
-    }
-  }
-  
+}
+
+
