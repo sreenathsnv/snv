@@ -1,6 +1,10 @@
 import React from 'react'
 import ProfilePic from '../../assets/images/profilepic.png'
 import '../../CSS/scroll-icon.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram,faLinkedinIn ,faGithub,faXTwitter} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
 const Header = () => {
   return (
     <>
@@ -15,19 +19,19 @@ const Header = () => {
             <h1 className="main-heading">Hi I'm Sreenath</h1>
             <div className="social-links">
                 <a href="https://instagram.com/_im.sreenath_/" target = "_blank" className="icon">
-                    <i className="fa-brands fa-instagram"></i>
+                <FontAwesomeIcon className='icon-i' icon={faInstagram} />
                 </a>
                 <a href="https://github.com/sreenathsnv/" target = "_blank" className="icon">
-                    <i className="fa-brands fa-github"></i>
+                <FontAwesomeIcon className='icon-i' icon={faGithub} />
                 </a>
                 <a href="https://in.linkedin.com/in/sreenath-v-097050217" className="icon" target = "_blank">
-                    <i className="fa-brands fa-linkedin-in"></i>
+                    <FontAwesomeIcon className='icon-i' icon={faLinkedinIn} />
                 </a>
                 <a href="https://twitter.com/Sreenath_snv" target = "_blank" className="icon">
-                    <i className="fa-brands fa-twitter"></i>
+                <FontAwesomeIcon className='icon-i' icon={faXTwitter} />
                 </a>
                 <a href="mailto:sreenathsnvaltpb@gmail.com" className="icon" target = "_blank">
-                    <i className="fa-solid fa-envelope"></i>
+                <FontAwesomeIcon className='icon-i' icon={faEnvelope} />
                 </a>
             </div>
 

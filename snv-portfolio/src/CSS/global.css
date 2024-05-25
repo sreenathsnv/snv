@@ -76,7 +76,7 @@ body{
 
     background: #f31313;  
 }
-.icon i{
+.icon .icon-i{
     position: absolute;
     font-size:3vh;
     margin:auto;
@@ -86,7 +86,7 @@ body{
     z-index: 2;
 
 }
-.icon:hover  i:hover
+.icon:hover  .icon-i:hover
 {
     color:#ffffff;
     transform: rotateZ(360deg);
@@ -103,7 +103,7 @@ body{
     flex-direction: row;
     align-items: center;
     height:5vh;
-    width:30vw;
+    width:27vw;
     margin-bottom: 0;
     z-index: 2;
 }
