@@ -22,11 +22,24 @@ body{
     background:rgb(80, 4, 151);
     
 }
+.profile-photo{
 
+    outline: none;
+}
 .profile-photo img{
+    outline: none;
+    border: none;
     width: 30vw;
+    transition: 2s;
+}
+.profile-photo img:hover{
+    
+    transform:rotateY(360deg);
+    transition: transform 2s, border 1s;
+
 }
 .main-heading{
+    font-size: 7vh;
     color: #f9fcfb;
     font-family: "Montserrat", sans-serif;
     font-weight: 900;

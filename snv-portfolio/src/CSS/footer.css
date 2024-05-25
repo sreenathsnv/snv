@@ -4,19 +4,23 @@
 
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
-    margin-left: 2vh;
+    justify-content: space-between;
+    background-color: #0b1634;
+    margin-left: 3vw;
     padding-top:10vh;
+    padding-left: 10vw;
     padding-bottom:10vh;
-    width: 90vw;
+    width: 100vw;
+    margin-bottom: 0vh;
 }
 
 .contact h1{
 
   font-size: 4vw;
   font-weight: 600;
-  margin: 20vh 0vw 10vw 10vh;
-  color: #527ff8;
+  margin-top: 20vh;
+  color: #f79d3d;
+  width:40vw;
 }
 
 .message-form{
@@ -110,9 +114,15 @@ border: 1px solid rgba(255, 255, 255, 0.63);
       flex-direction: column;
       align-items: center;
     }
+    .contact h1{
+      font-size: 10vw;
+      margin-bottom: 10vh;
+      width:100vw;
+      margin-left: 36vw;
+    }
     .message-form{
       width:90vw;
-      margin-left: 7vw;
+      margin-right: 8vw;
     }
     .footer-form{
       width: 100vw;
@@ -122,6 +132,8 @@ border: 1px solid rgba(255, 255, 255, 0.63);
 .footer-social{
 
   margin: 2vw;
+  margin-left: 3vw;
+  margin-top: 0vh;
   padding:4vh;
   display: flex;
   justify-content: center;

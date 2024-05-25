@@ -4,6 +4,7 @@ import '../../CSS/scroll-icon.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram,faLinkedinIn ,faGithub,faXTwitter} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { TypeAnimation } from 'react-type-animation';
 
 const Header = () => {
   return (
@@ -16,7 +17,23 @@ const Header = () => {
 
         <div className="text-heading">
 
-            <h1 className="main-heading">Hi I'm Sreenath</h1>
+        <TypeAnimation
+      sequence={[
+        
+        "I'm Sreenath V",
+        1000,
+        
+        "I'm a FullStack Developer",
+        1000,
+        "I'm a MCA Student",
+        1000,
+        1000
+      ]}
+      wrapper="h1"
+      speed={10}
+      className='main-heading'
+      repeat={Infinity}
+    />
             <div className="social-links">
                 <a href="https://instagram.com/_im.sreenath_/" target = "_blank" className="icon">
                 <FontAwesomeIcon className='icon-i' icon={faInstagram} />
