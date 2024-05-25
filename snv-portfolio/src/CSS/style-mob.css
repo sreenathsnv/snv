@@ -50,10 +50,12 @@ body{
 
 .text-heading{
 
-    font-size: 4vh;
+    font-size: 3vh;
 }
 .main-heading{
     margin-left: 4vh;
+    font-size: 6vh;
+    font-weight: 600;
 }
 .about{
 
@@ -139,7 +141,9 @@ body{
 
 .project-name{
 
-    font-size: 5vh;
+    font-size: 4vh;
+    font-weight: 600;
+    
 }
 .desc-project{
 

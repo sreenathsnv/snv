@@ -1,0 +1,129 @@
+
+
+.contact{
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-left: 2vh;
+    padding-top:10vh;
+    padding-bottom:10vh;
+    width: 90vw;
+}
+
+.contact h1{
+
+  font-size: 4vw;
+  font-weight: 600;
+  margin: 20vh 0vw 10vw 10vh;
+  color: #527ff8;
+}
+
+.message-form{
+
+  display: flex;  
+  align-items: center;
+  width: 30vw;
+background: rgba(255, 255, 255, 0.97);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.63);
+
+}
+
+.footer-form{
+
+  display: flex;
+  flex-direction: column;
+  width:30vw;
+  height:70vh;
+}
+
+
+
+/* Input container */
+.input-container {
+    position: relative;
+    margin: 20px;
+    margin-top: 5vh;
+  }
+  
+  /* Input field */
+  .input-field {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 2.5vh;
+    border: none;
+    border-bottom: 2px solid #0f0f38;
+    outline: none;
+    background-color: transparent;
+    
+  }
+  
+  /* Input label */
+  .input-label {
+    position: absolute;
+    top: -4vh;
+    left: 0;
+    font-size: 2.3vh;
+    color: rgb(34, 29, 57);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input highlight */
+  .input-highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #527ff8;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input field:focus styles */
+  .input-field:focus + .input-label {
+    top: -27px;
+    font-size: 2vh;
+    color: #0b1634;
+  }
+  
+  .input-field:focus + .input-label + .input-highlight {
+    width: 100%;
+  }
+
+  input,textarea{
+
+    color:#080808;
+    font-size: 2.5vh;
+    backdrop-filter: blur(0px);
+
+  }
+
+
+  @media screen and (max-width: 1013px) {
+
+    .contact{
+  
+      flex-direction: column;
+      align-items: center;
+    }
+    .message-form{
+      width:90vw;
+      margin-left: 7vw;
+    }
+    .footer-form{
+      width: 100vw;
+    }
+  }
+  
+.footer-social{
+
+  margin: 2vw;
+  padding:4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
