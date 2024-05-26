@@ -13,7 +13,7 @@ const SocialShare = () => {
                 Develeoped By SREENATH V
             </h3>
         </div>
-        <div className="social-links">
+        <div className="footer-social-links" >
                 <a href="https://instagram.com/_im.sreenath_/" target = "_blank" className="icon">
                 <FontAwesomeIcon className='icon-i' icon={faInstagram} />
                 </a>

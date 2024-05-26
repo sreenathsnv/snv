@@ -4,8 +4,14 @@ const About = () => {
   return (
     <div className="about">
         <p className="about-head">About</p>
-        <p className="content-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem veritatis quas aliquam molestias enim corrupti praesentium nisi fugiat explicabo! Amet totam ducimus alias repellat obcaecati consequatur, quas debitis incidunt soluta nobis ea eaque deserunt necessitatibus labore unde voluptatem suscipit voluptas facilis animi laboriosam aliquid. Neque facere sunt ab, nemo doloremque molestias laudantium voluptatum!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic tenetur mollitia quidem eum obcaecati dignissimos perferendis fuga ipsam doloribus, excepturi ex voluptatibus voluptates, est atque?</p>
+        <p className="content-about">
+<b style={{'color':'#3a5a40'}}><b style={{fontSize:'3vh',marginLeft:'6vh',marginRight:'1vh'}}>Hello.!</b> I'm a passionate Full Stack Developer with a keen interest in technology and development.</b> Currently, I'm pursuing my Master's in Computer Applications, which allows me to deepen my knowledge and skills in this ever-evolving field. 
+
+I love solving problems and thrive on the excitement of discovering new things through continuous learning. Whether it's developing innovative web applications or exploring the latest tech trends, I am always eager to take on new challenges and expand my horizons.
+
+<br></br><br></br>
+<b style={{fontSize:'3vh',margin:'auto',color:'#f8333c'}}>Let's connect and create something amazing together!</b>
+        </p>
     </div>
   )
 }
