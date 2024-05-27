@@ -195,7 +195,6 @@ body{
     width: 100vw;
     padding-top: 10vh;
     margin-top: 10vh;
-    margin-left: 3vw;
     width: 100vw;
    
 }
@@ -216,8 +215,7 @@ body{
     flex-direction:row;
     background: #ffffff;
     align-items: center;
-    margin: 2vw;
-    margin-left: 10vw;
+    margin: 2vw 4vw;
     border-radius: 2vh;
     padding:1vh;
 
