@@ -35,6 +35,7 @@ a:hover{
 }
 .nav__brand {
   width:50vw;
+  font-size: 2.5vh;
   text-transform: uppercase;
 }
 
