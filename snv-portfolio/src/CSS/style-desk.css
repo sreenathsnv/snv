@@ -18,7 +18,10 @@ body{
     overflow-x: hidden;
     width: 100vw;
 }
+#root{
+    overflow-x: hidden;  
 
+}
 .header-container{
 
     display: flex;
