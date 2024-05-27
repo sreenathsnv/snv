@@ -28,7 +28,7 @@ const containerVariants = {
 
 const SkillsImages = () => {
 
-    let images = [Python,Django,ReactImage,Html,Css,Js,C,Git]
+    let images = [Python,Django,ReactImage,Html,Css,Js,C]
 
     return(
 
