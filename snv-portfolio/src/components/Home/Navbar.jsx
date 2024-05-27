@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../../CSS/navbar.css";
 import "../../CSS/resume.css";
+import { motion, spring } from "framer-motion"
 
 function Navbar() {
   const [active, setActive] = useState("nav__menu");
@@ -61,11 +62,15 @@ function Navbar() {
             Contact
           </a>
         </li>
-        <li>
-        <button className="button">
-  <span>Resume</span>
-</button>
 
+        <li>
+          <motion.button
+            initial={{scale:1}}
+            whileTap={{scale:1.4}}
+            transition={{type:'spring',stiffness:125}}
+            className="button">
+            <span>Resume</span>
+          </motion.button >
         </li>
       </ul>
       <div onClick={navToggle} className={icon}>

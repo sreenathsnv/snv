@@ -5,11 +5,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram,faLinkedinIn ,faGithub,faXTwitter} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { TypeAnimation } from 'react-type-animation';
-
+import { motion, spring } from "framer-motion"
 const Header = () => {
   return (
     <>
-    <div className="header-container">
+    <motion.div 
+    initial={{scale:.55}}
+    animate = {{scale:1}}
+    transition={{duration:1,type:"spring",stiffness:70}}
+    className="header-container">
 
         <div className="profile-photo">
             <img src={ProfilePic} alt="" srcset=""/>
@@ -23,7 +27,7 @@ const Header = () => {
         "I'm Sreenath",
         1000,
         
-        "I'm a FullStack Developer",
+        "I'm a Full Stack Developer",
         1000,
         "I'm a MCA Student",
         1000,
@@ -33,7 +37,7 @@ const Header = () => {
       speed={10}
       className='main-heading'
       repeat={Infinity}
-    />
+      />
             <div className="social-links">
                 <a href="https://instagram.com/_im.sreenath_/" target = "_blank" className="icon">
                 <FontAwesomeIcon className='icon-i' icon={faInstagram} />
@@ -53,7 +57,7 @@ const Header = () => {
             </div>
 
         </div>
-    </div>
+    </motion.div>
     {/* <div className="main__action">
     <a className="main__scroll" href="#">
       <div className="main__scroll-box">
