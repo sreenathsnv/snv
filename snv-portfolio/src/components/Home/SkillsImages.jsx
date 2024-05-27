@@ -35,7 +35,7 @@ const SkillsImages = () => {
         <motion.div 
         initial="hidden"
       whileInView="show"
-      viewport={{ once: true, margin: '-250px' }}
+      viewport={{ once: true, margin: '30%' }}
       variants={containerVariants}
         className="skills-img">
             {
