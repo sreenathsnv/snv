@@ -6,7 +6,7 @@ import { TypeAnimation } from 'react-type-animation';
 const Footer = () => {
   return (
     <>
-    <div className="contact">
+    <div className="contact" id='contact'>
        <TypeAnimation
       sequence={[
         

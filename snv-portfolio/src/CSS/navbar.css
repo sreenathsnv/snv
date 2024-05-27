@@ -78,7 +78,7 @@ a:hover{
 }
 /* Active Class */
 .nav__active {
-  transform: translateX(-20vw);
+  transform: translateX(-19vw);
 }
 
 /* Toggle Icon Animation */

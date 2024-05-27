@@ -9,7 +9,7 @@ import { motion, spring } from "framer-motion"
 const Header = () => {
   return (
     <>
-    <motion.div 
+    <motion.div id='home'
     initial={{scale:.55}}
     animate = {{scale:1}}
     transition={{duration:1,type:"spring",stiffness:70}}

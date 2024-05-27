@@ -87,7 +87,7 @@ const Projects = () => {
         },
     ]
   return (
-    <motion.div
+    <motion.div id='projects'
     variants={containerVariant} 
     initial= 'hidden'
     whileInView='show'
