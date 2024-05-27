@@ -40,21 +40,21 @@ const Header = () => {
       repeat={Infinity}
       />
             <div className="social-links">
-                <a href="https://instagram.com/_im.sreenath_/" target = "_blank" className="icon">
+                {/* <a href="https://instagram.com/_im.sreenath_/" target = "_blank" className="icon">
                 <FontAwesomeIcon className='icon-i' icon={faInstagram} />
-                </a>
+                </a> */}
                 <a href="https://github.com/sreenathsnv/" target = "_blank" className="icon">
                 <FontAwesomeIcon className='icon-i' icon={faGithub} />
                 </a>
                 <a href="https://in.linkedin.com/in/sreenath-v-097050217" className="icon" target = "_blank">
                     <FontAwesomeIcon className='icon-i' icon={faLinkedinIn} />
                 </a>
-                <a href="https://twitter.com/Sreenath_snv" target = "_blank" className="icon">
+                {/* <a href="https://twitter.com/Sreenath_snv" target = "_blank" className="icon">
                 <FontAwesomeIcon className='icon-i' icon={faXTwitter} />
                 </a>
                 <a href="mailto:sreenathsnvaltpb@gmail.com" className="icon" target = "_blank">
                 <FontAwesomeIcon className='icon-i' icon={faEnvelope} />
-                </a>
+                </a> */}
             </div>
 
         </div>
