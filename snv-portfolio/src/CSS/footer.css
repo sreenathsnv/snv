@@ -6,7 +6,6 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     background-color: #0b1634;
-    margin-left: 3vw;
     padding-top:10vh;
     padding-left: 10vw;
     padding-bottom:10vh;
@@ -131,8 +130,6 @@ border: 1px solid rgba(255, 255, 255, 0.63);
   
 .footer-social{
 
-  margin: 2vw;
-  margin-left: 3vw;
   margin-top: 0vh;
   padding:4vh;
   display: flex;

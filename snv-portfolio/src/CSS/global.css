@@ -15,7 +15,16 @@ body{
     flex-direction: column;
 
 }
+#root{
 
+    display: flex;
+    flex-direction:column ;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+
+}
 .header-container{
 
     background:rgb(80, 4, 151);
