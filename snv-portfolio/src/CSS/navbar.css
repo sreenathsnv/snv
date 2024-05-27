@@ -27,12 +27,13 @@ a:hover{
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 1vh 3vw 1vh 8vw;
   height: 10vh;
   background: #f2f1f3;
 }
 .nav__brand {
+  width:50vw;
   text-transform: uppercase;
 }
 
@@ -78,7 +79,7 @@ a:hover{
 }
 /* Active Class */
 .nav__active {
-  transform: translateX(-19vw);
+  transform: translateX(0vw);
 }
 
 /* Toggle Icon Animation */

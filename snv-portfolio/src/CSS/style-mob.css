@@ -12,8 +12,13 @@ body{
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    width: 100vw;
+    
 }
+#root{
+    overflow-x: hidden;  
 
+}
 .navbar{
 
     display: flex;
@@ -22,7 +27,7 @@ body{
     flex-direction: column;
     min-height: 10vh;
     background:rgb(80, 4, 151);
-    width: 100vw;
+    width: 90vw;
 }
 .header-container{
 
@@ -30,7 +35,7 @@ body{
     flex-direction: column;
     align-items: center;
     min-height:50vh;
-    width: 100vw;
+    width: 110vw;
     margin-top: -1vh;
     padding-top: 4vh;
     padding-bottom: 4vh;
