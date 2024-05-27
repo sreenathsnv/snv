@@ -153,7 +153,8 @@ body{
 }
 .skills{
 
-    height: 60vh;
+    min-height: 40vh;
+    padding-bottom: 10vh;
 }
 .skills-heading{
     
