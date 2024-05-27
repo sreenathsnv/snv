@@ -49,10 +49,18 @@ body{
 
     display: flex;
     flex-direction: row;
-    margin-top: 2vh;
-    width:100%;
+    margin-top: 0vh;
+    width:100vw;
+    align-items: center;
+    justify-content: center;
 }
-
+.icon
+{
+    margin: 1vh;
+    width:5vh;
+    height:5vh;   
+    overflow: hidden;
+}
 .text-heading{
 
     font-size: 3vh;
@@ -106,7 +114,7 @@ body{
 }
 .cards img{
 
-    width:8vh;
+    width:4vh;
 }
 .project-conatiner{
 
