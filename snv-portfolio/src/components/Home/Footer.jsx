@@ -20,7 +20,8 @@ const Footer = () => {
       wrapper="h1"
       speed={10}
       repeat={Infinity}
-    /><Contact/>
+    />
+    <Contact/>
       </div>
     <SocialShare/>
     </>

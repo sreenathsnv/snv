@@ -1,12 +1,20 @@
 import React, { useState } from 'react'
 import '../../CSS/submit.css'
+
+import { motion } from "framer-motion"
 const Contact = () => {
 
     const [name,setName] = useState(null)
     const [email,setEmail] = useState(null)
     const [message,setMessage] = useState("Type your mesage here")
+    const handleSend = ()=>{}
   return (
-    <div className='message-form'>
+    <motion.div 
+    initial={{scale:.85}}
+    whileInView={{scale:1}}
+    transition={{delay:.05,duration:.5,type:'spring',stiffness:120}}
+    viewport={{once:true}}
+    className='message-form'>
         <form action="" className='footer-form'>
 
             <div className="input-container">
@@ -26,9 +34,15 @@ const Contact = () => {
                 <span className="input-highlight"></span>
             </div>
             
-            <button className='submit-bt' type='submit'>Send</button>
+            <motion.button 
+            initial={{scale:1,rotateZ:0}}
+            whileTap={()=>{
+                handleSend()
+                return({scale:[1,1.1,1.4,1], rotateZ:[0,10,-10,10,0]})
+            }}
+            className='submit-bt' type='submit'>Send</motion.button>
         </form>
-    </div>
+    </motion.div>
   )
 }
 
