@@ -8,13 +8,25 @@ import ReactImage from '../../assets/images/skills/science.png'
 import Js from '../../assets/images/skills/js.png' 
 import C from '../../assets/images/skills/letter-c.png' 
 import SkillImageComponent from './SkillImageComponent'
+import { delay, motion,stagger } from "framer-motion"
 const SkillsImages = () => {
 
     let images = [Python,Django,ReactImage,Html,Css,Js,C,Git]
 
     return(
 
-        <div className="skills-img">
+        <motion.div 
+        initial={{
+            y:100,
+            opacity:0,
+        }}
+        whileInView={{
+            y:0,
+            opacity:1    
+        }}
+        viewport={{once:true,margin:'-250px'}}
+        transition={{delay:.05,duration:1,staggerChildren:.5}}
+        className="skills-img">
             {
                 
                 images.map((ele,index)=>(
@@ -23,7 +35,7 @@ const SkillsImages = () => {
                 ))
             }
             
-        </div>
+        </motion.div>
     )
 
 }

@@ -10,8 +10,9 @@ function Navbar() {
 
   const handleDownload = () => {
 
-    const fileUrl = '../../../public/text.txt';
-    const fileName = 'file.txt';
+    const fileUrl = '../../../public/resume.pdf';
+    const fileName = 'SREENATH V';
+    console.log('CLICKED')
 
     const link = document.createElement('a');
     link.href = fileUrl;
@@ -66,7 +67,10 @@ function Navbar() {
         <li>
           <motion.button
             initial={{scale:1}}
-            whileTap={{scale:1.4}}
+            whileTap={()=>{
+              handleDownload()
+              return({scale:1.4})
+            }}
             transition={{type:'spring',stiffness:125}}
             className="button">
             <span>Resume</span>
