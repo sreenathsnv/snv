@@ -19,8 +19,8 @@ const containerVariants = {
       opacity: 1,
       y: 0,
       transition: {
-        duration:1,
-        staggerChildren: 0.2, // Adjust the value for different stagger timing
+        duration:2,
+        staggerChildren: 0.2, 
       },
     },
   };

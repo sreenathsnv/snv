@@ -1,9 +1,31 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
+import { motion } from "framer-motion"
+
+const ChildVariant = {
+  hidden:{
+      opacity:0,
+      y:-20,
+  },
+  show:{
+      opacity:1,
+      y:0,
+      
+      transition:{
+        duration:1,
+      },
+  }
+}
 const ProjectCard = ({data}) => {
-    const {heading,desc,image,github} = data
+   
+  const {heading,desc,image,github} = data
+
   return (
-    <div className="project-card">
+    <motion.div 
+
+    variants={ChildVariant}
+    viewport={{once:true}}
+    className="project-card">
                 <div className="snapshots">
                     <img src={image} />
                 </div>
@@ -31,7 +53,7 @@ const ProjectCard = ({data}) => {
                   </button>
                 </a>
                 </div>
-            </div>
+            </motion.div>
   )
 }
 

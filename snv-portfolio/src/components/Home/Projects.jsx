@@ -6,6 +6,54 @@ import Notepad from '../../assets/images/projects/notepad.jpg'
 import CCTV from '../../assets/images/projects/cctv.png'
 import Todo from '../../assets/images/projects/todo.png'
 
+import { motion } from "framer-motion"
+
+
+const containerVariant = {
+    hidden:{
+        opacity:0,
+    },
+    show:{
+        opacity: 1,
+        transition:{
+            duration:1,
+            delay:.5,
+        }
+    },
+    
+};
+
+const cardsVariant = {
+    hidden:{
+        opacity:0,
+    },
+    show:{
+        opacity: 1,
+        transition:{
+            duration:1,
+            delay:.5,
+            staggerChildren:0.6
+        }
+    },
+    
+};
+
+
+
+const headVariant = {
+    hidden:{
+        opacity:0,
+        x:-20,
+    },
+    show:{
+        x:0,
+        opacity:1,
+    transition:{
+        duration:2,
+        delay:.5
+    }
+    }
+}
 
 
 
@@ -39,16 +87,28 @@ const Projects = () => {
         },
     ]
   return (
-    <div className='project-conatiner'>
-         <p class="proj-head">Projects</p>
-         <div class="project-card-container">
+    <motion.div
+    variants={containerVariant} 
+    initial= 'hidden'
+    whileInView='show'
+    viewport={{once:true,amount:.2,margin:'30%'}}
+    className='project-conatiner'>
+         <motion.p 
+         variants = {headVariant}
+         
+         class="proj-head">Projects</motion.p>
+         <motion.div 
+            variants = {cardsVariant}
+            initial='hidden'
+            whileInView = 'show'
+         class="project-card-container">
             {
                 cardsData.map((data,index)=>(
                     <ProjectCard key ={index} data = {data}/>
                 ))
             }
-         </div>
-    </div>
+         </motion.div>
+    </motion.div>
   )
 }
 
