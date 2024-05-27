@@ -8,7 +8,7 @@ const About = () => {
       opacity:1,
       x:0
     }}
-    viewport={{margin:'50px',amount:.5}}
+    viewport={{margin:'50px',amount:.5,once:true}}
     transition={{duration:1,delay:.05,stiffness:250}}
     className="about">
         <p className="about-head">About</p>

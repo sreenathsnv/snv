@@ -20,6 +20,7 @@ const SkillsHeader = () => {
 
         }}
         transition={{duration:1,delay:.05}}
+        viewport={{once:true}}
         className="skills-head">
             <p className="skills-heading">Skills</p>
             <p className="skills-quote">"The expert in anything was once a beginner"</p>

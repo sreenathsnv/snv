@@ -12,7 +12,6 @@ function Navbar() {
 
     const fileUrl = '../../../public/resume.pdf';
     const fileName = 'SREENATH V';
-    console.log('CLICKED')
 
     const link = document.createElement('a');
     link.href = fileUrl;

@@ -9,6 +9,23 @@ import Js from '../../assets/images/skills/js.png'
 import C from '../../assets/images/skills/letter-c.png' 
 import SkillImageComponent from './SkillImageComponent'
 import { delay, motion,stagger } from "framer-motion"
+
+const containerVariants = {
+    hidden: {
+      opacity: 0,
+      y: 100,
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration:1,
+        staggerChildren: 0.2, // Adjust the value for different stagger timing
+      },
+    },
+  };
+  
+
 const SkillsImages = () => {
 
     let images = [Python,Django,ReactImage,Html,Css,Js,C,Git]
@@ -16,16 +33,10 @@ const SkillsImages = () => {
     return(
 
         <motion.div 
-        initial={{
-            y:100,
-            opacity:0,
-        }}
-        whileInView={{
-            y:0,
-            opacity:1    
-        }}
-        viewport={{once:true,margin:'-250px'}}
-        transition={{delay:.05,duration:1,staggerChildren:.5}}
+        initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, margin: '-250px' }}
+      variants={containerVariants}
         className="skills-img">
             {
                 
