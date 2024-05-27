@@ -13,6 +13,7 @@ const Header = () => {
     initial={{scale:.55}}
     animate = {{scale:1}}
     transition={{duration:1,type:"spring",stiffness:70}}
+    viewport={{once:true}}
     className="header-container">
 
         <div className="profile-photo">
