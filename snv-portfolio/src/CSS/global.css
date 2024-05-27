@@ -80,15 +80,6 @@ body{
 
 /* ============================Skills=============== */
 
-.skills{
-
-    display: flex;
-    flex-direction:column;
-    width: 100vw;
-    min-height:50vh;
-    margin-top:10vh;
-
-}
 .skills .skills-head{
 
     display: flex;
