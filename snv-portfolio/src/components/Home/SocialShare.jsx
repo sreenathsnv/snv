@@ -10,7 +10,7 @@ const SocialShare = () => {
     <div className="footer-social">
         <div className="credits">
             <h3>
-                Develeoped By SREENATH V
+                Developed By SREENATH V
             </h3>
         </div>
         <div className="footer-social-links" >
