@@ -49,18 +49,83 @@ body{
 
     display: flex;
     flex-direction: row;
-    margin-top: 0vh;
-    width:100vw;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    height: 5vh;
+    width: 100vw;
+    margin-bottom: 10vh;
+    z-index: 2;
+    margin-top: 10vh;
 }
 .icon
 {
-    margin: 1vh;
-    width:6vw;
-    height:6vw;   
+    position: relative;
+    width:5vh;
+    height:5vh;
+    border-radius: 50%;
+    background: #f9fafa;
+    border: 2px solid #7e7b7b;
+    margin-left: 2vh;
     overflow: hidden;
 }
+
+.icon::after
+{
+    content: "";
+    position: absolute;
+    background: #616161;
+    width: 7vh;
+    height:7vh;
+    top:-7vh;
+    transition: transform 1s;
+}
+.icon:nth-child(1)::after
+{
+
+    background: #f41c8f;  
+}
+.icon:nth-child(2)::after
+{
+
+    background: #151515;  
+}
+.icon:nth-child(3)::after
+{
+
+    background: #11117e;  
+}
+.icon:nth-child(4)::after
+{
+
+    background: #1c96f4;  
+}
+.icon:nth-child(5)::after
+{
+
+    background: #f31313;  
+}
+.icon .icon-i{
+    position: absolute;
+    font-size:3vh;
+    margin:auto;
+    top:.8vh;
+    left:.8vh;
+    color:#0f0f0f;
+    z-index: 2;
+
+}
+.icon:hover  .icon-i:hover
+{
+    color:#ffffff;
+    transform: rotateZ(360deg);
+    transition: 2s;
+}
+ .icon:hover::after 
+{
+
+   transform: translateY(7vh);
+}
+
+
 .text-heading{
 
     font-size: 3vh;

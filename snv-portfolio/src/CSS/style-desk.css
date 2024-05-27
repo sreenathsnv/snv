@@ -47,6 +47,88 @@ body{
     color: #f9fcfb;
     font-size: 10vh;
 }
+.icon
+{
+    position: relative;
+    margin:auto;
+    margin-right: 3vh;
+    width:5vh;
+    height:5vh;
+    border-radius: 50%;
+    background: #f9fafa;
+    border: 2px solid #7e7b7b;
+    
+    overflow: hidden;
+}
+
+.icon::after
+{
+    content: "";
+    position: absolute;
+    background: #616161;
+    width: 7vh;
+    height:7vh;
+    top:-7vh;
+    transition: transform 1s;
+}
+.icon:nth-child(1)::after
+{
+
+    background: #f41c8f;  
+}
+.icon:nth-child(2)::after
+{
+
+    background: #151515;  
+}
+.icon:nth-child(3)::after
+{
+
+    background: #11117e;  
+}
+.icon:nth-child(4)::after
+{
+
+    background: #1c96f4;  
+}
+.icon:nth-child(5)::after
+{
+
+    background: #f31313;  
+}
+.icon .icon-i{
+    position: absolute;
+    font-size:3vh;
+    margin:auto;
+    top:.8vh;
+    left:.8vh;
+    color:#0f0f0f;
+    z-index: 2;
+
+}
+.icon:hover  .icon-i:hover
+{
+    color:#ffffff;
+    transform: rotateZ(360deg);
+    transition: 2s;
+}
+ .icon:hover::after 
+{
+
+   transform: translateY(7vh);
+}
+
+.social-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height:5vh;
+    width:27vw;
+    margin-bottom: 0;
+    z-index: 2;
+    margin-top: 10vh;
+}
+
 .about{
     background:rgb(245, 244, 244);
     display: flex;
@@ -68,10 +150,23 @@ body{
     margin:5vh 2vw 0vh 5vw;
 
 }
+.skills-img{
+
+    display: flex;
+    flex-wrap: wrap;
+    width:35vw;
+    min-height: 20vh;
+    
+}
 .cards{
 
     filter: drop-shadow(1vh 1vh 1em #8b8b8b);
     transition: 1s;
+}
+.cards img{
+
+    width:12vh;
+    
 }
 .skills-img:hover .cards:not(:hover)
 {
