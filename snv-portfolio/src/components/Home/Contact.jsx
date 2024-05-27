@@ -10,7 +10,7 @@ const Contact = () => {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
-        message: "Type your mesage here",
+        message: "",
       });
 
     const [state, handleSubmit] = useForm(formspreeKey);
@@ -21,7 +21,7 @@ const Contact = () => {
           setFormData({
             name: "",
             email: "",
-            message:"Type your mesage here",
+            message:"",
           });
         }
       }, [state.succeeded]);
