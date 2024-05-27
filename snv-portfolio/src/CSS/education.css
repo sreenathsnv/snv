@@ -12,6 +12,7 @@
     display: flex;
     background: var(--primary-color);
     width: 100vw;
+    margin-bottom: 2vw;
     justify-content: space-around;
 
 }
