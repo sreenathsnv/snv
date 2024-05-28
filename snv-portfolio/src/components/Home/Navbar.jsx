@@ -6,19 +6,25 @@ import { motion, spring } from "framer-motion"
 function Navbar() {
   const [active, setActive] = useState("nav__menu");
   const [icon, setIcon] = useState("nav__toggler");
-
+  const [isdownload,setDownload] = useState(false)
 
   const handleDownload = () => {
+    if(!isdownload){
+      setDownload(true)
 
-    const fileUrl = '../../../public/resume.pdf';
-    const fileName = 'SREENATH V';
+      const fileUrl = '/resume.pdf';
+      const fileName = 'SREENATH V';
 
-    const link = document.createElement('a');
-    link.href = fileUrl;
-    link.download = fileName;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+      const link = document.createElement('a');
+      link.href = fileUrl;
+      link.download = fileName;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      setDownload(false)
+    
+    }
+
   };
 
   const navToggle = () => {
@@ -67,9 +73,9 @@ function Navbar() {
           <motion.button
             initial={{scale:1}}
             whileTap={()=>{
-              handleDownload()
               return({scale:1.4})
             }}
+            onTap={handleDownload}
             transition={{type:'spring',stiffness:125}}
             className="button">
             <span>Resume</span>
