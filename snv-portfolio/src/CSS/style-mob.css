@@ -42,7 +42,7 @@ body{
     
 }
 .profile-photo img{
-    width:40vw;
+    width:60vw;
     margin-bottom: 4vh;
 }
 .social-links{
@@ -52,7 +52,7 @@ body{
     justify-content: space-evenly;
     height: 5vh;
     width: 100vw;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
     z-index: 2;
     margin-top: 10vh;
 }
