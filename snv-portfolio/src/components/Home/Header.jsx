@@ -30,7 +30,7 @@ const Header = () => {
         
         "I'm a Full Stack Developer",
         1000,
-        "I'm a MCA Student",
+        "I'm an MCA Student",
         1000,
         1000
       ]}
