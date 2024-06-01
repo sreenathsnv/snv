@@ -25,6 +25,7 @@ const ProjectCard = ({data}) => {
 
     variants={ChildVariant}
     viewport={{once:true}}
+    whileHover={{scale:1.1}}
     className="project-card">
                 <div className="snapshots">
                     <img src={image} />
