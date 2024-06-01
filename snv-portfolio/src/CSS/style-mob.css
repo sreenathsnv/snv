@@ -158,8 +158,9 @@ body{
 }
 .skills-heading{
     
-    font-size: 10vw;
+    font-size: 15vw;
     margin-left:5vw;
+    margin-top: 3vh;
     
 }
 
@@ -191,7 +192,7 @@ body{
 }
 .proj-head{
 
-    font-size: 5vh;
+    font-size: 7vh;
 }
 .project-card-container{
 

@@ -210,6 +210,7 @@ body{
 
     display:flex;
     flex-direction: column;
+    align-items: center;
     margin-right: 2vw;
 }
 .project-card{
@@ -221,6 +222,7 @@ body{
     margin: 2vw 4vw;
     border-radius: 2vh;
     padding:1vh;
+    width: 75vw;
 
 }
 .project-name{
@@ -233,14 +235,14 @@ body{
     font-size: 2.5vh;
 }
 .snapshots{
-
-    width: 60vw;
+    
+    width: 30vw;
     margin-right: 7vw;
 }
 .snapshots img{
 
-    width:40vw;
-    height:50vh;
+    width:25vw;
+    height:31vh;
 }
 .project-card  a{
 

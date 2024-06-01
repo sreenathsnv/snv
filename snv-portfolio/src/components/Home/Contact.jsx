@@ -2,7 +2,7 @@ import React, { useState,useEffect } from 'react'
 import '../../CSS/submit.css'
 import {} from 'react-hook-form'
 import { motion } from "framer-motion"
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 import toast, { Toaster } from 'react-hot-toast';
 const Contact = () => {
 
