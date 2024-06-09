@@ -198,6 +198,7 @@ body{
     padding-top: 10vh;
     margin-top: 10vh;
     width: 100vw;
+    background: #ffff;
    
 }
 .proj-head{
@@ -218,6 +219,10 @@ body{
     display: flex;
     flex-direction:row;
     background: #ffffff;
+    background: rgba(255, 255, 255, 0.22);
+    box-shadow: 1vh 3vh 5vh .1em rgb(227, 225, 225);
+    backdrop-filter: blur(10.4px);
+    -webkit-backdrop-filter: blur(10.4px);
     align-items: center;
     margin: 2vw 4vw;
     border-radius: 2vh;

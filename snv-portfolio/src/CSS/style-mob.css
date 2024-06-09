@@ -204,7 +204,7 @@ body{
     display: flex;
     flex-direction:column;
     background: #ffffff;
-
+    border: .2vh solid #c0bfc045;
     align-items: center;
     margin: 1vh;
     border-radius: 1vh;
