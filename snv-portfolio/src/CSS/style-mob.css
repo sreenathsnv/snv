@@ -19,6 +19,13 @@ body{
     overflow-x: hidden;  
 
 }
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 .navbar{
 
     display: flex;

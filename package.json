@@ -22,8 +22,9 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.51.5",
     "react-hot-toast": "^2.4.1",
-    "react-spinners": "^0.14.1",
-    "react-type-animation": "^3.2.0"
+    "react-tsparticles": "^2.12.2",
+    "react-type-animation": "^3.2.0",
+    "tsparticles": "^3.5.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
