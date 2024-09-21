@@ -4,7 +4,8 @@ import ProjectCard from './ProjectCard'
 import ArtsDay from '../../assets/images/projects/jalakadmin.jpg'
 import Notepad from '../../assets/images/projects/notepad.jpg'
 import CCTV from '../../assets/images/projects/cctv.png'
-import Todo from '../../assets/images/projects/todo.png'
+import Turf from '../../assets/images/projects/Turf.jpg'
+import CleverBooks from '../../assets/images/projects/CleverBooks.png'
 
 import { motion } from "framer-motion"
 
@@ -61,6 +62,12 @@ const Projects = () => {
 
     let cardsData = [
         {
+            heading:"4Play - Turf Reservation and Player Analysis",
+            desc :"This platform is designed to streamline turf reservations and provide advanced player analysis features. It caters to both turf owners and players by offering an easy-to-use interface for booking, reviewing, and interacting within the community.",
+            image:Turf,
+            github:"https://github.com/sreenathsnv/Turf-reservation",
+        },
+        {
             heading:"Storage Optimisation for cctv",
             desc :"This project comprises both a desktop application and a web application. Its primary objective is to reduce storage usage of CCTV footage by removing redundant frames. The technologies employed include Python-Django, OpenCV, Tkinter, requests, REST API, HTML, CSS, JavaScript, and Bootstrap.",
             image:CCTV,
@@ -72,13 +79,19 @@ const Projects = () => {
             image:ArtsDay,
             github:"https://github.com/sreenathsnv/jalakam-online",
         },
-        {
-            heading:"Todo using React",
-            desc :"A simple and straightforward to-do application developed using React, enabling users to perform CRUD (Create, Read, Update, Delete) operations on to-do items. Additionally, it leverages the web browser's local storage feature to store notes.",
-            image:Todo,
-            github:"https://github.com/sreenathsnv/Todo--React",
-        },
+        // {
+        //     heading:"Todo using React",
+        //     desc :"A simple and straightforward to-do application developed using React, enabling users to perform CRUD (Create, Read, Update, Delete) operations on to-do items. Additionally, it leverages the web browser's local storage feature to store notes.",
+        //     image:Todo,
+        //     github:"https://github.com/sreenathsnv/Todo--React",
+        // },
         
+        {
+            heading:"Clever Books",
+            desc :"Developed a landing page using React Js. Implemented Framer motion for smooth animations and deployed it on Netlify for better accessibility.",
+            image:CleverBooks,
+            github:"https://github.com/sreenathsnv/CleverBooks-PatilKaki",
+        },
         {
             heading:"Notepad",
             desc :"A straightforward notepad application developed with Tkinter, allowing users to type, style, and save text.",
